@@ -42,14 +42,14 @@ uiElement.form.addEventListener("submit", (e) => {
       destination: "https://github.com/apvarun/toastify-js",
       newWindow: true,
       close: true,
-      gravity: "top", // `top` or `bottom`
-      position: "right", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      gravity: "top",
+      position: "right",
+      stopOnFocus: true,
       style: {
         background: "linear-gradient(to right, red, #464645ff)",
         borderRadius: "10px",
       },
-      onClick: function () {}, // Callback after click
+      onClick: function () {},
     }).showToast();
     return;
   }

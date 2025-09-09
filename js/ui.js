@@ -43,7 +43,7 @@ const renderMails = (outlet, data) => {
 
 const updateMail = (e) => {
   if (e.target.classList.contains("bi-trash-fill")) {
-    const res = confirm("Silme işlemini onaylıyor musunuz?");
+    const res = confirm("Silme İşlemini Onaylıyor Musunuz?");
 
     if (res) {
       const mail = e.target.closest(".mail");
@@ -62,13 +62,13 @@ const updateMail = (e) => {
         destination: "https://github.com/apvarun/toastify-js",
         newWindow: true,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
         style: {
           background: "linear-gradient(to right, tomato, #eaf097ff)",
         },
-        onClick: function () {}, // Callback after click
+        onClick: function () {},
       }).showToast();
     }
   }
